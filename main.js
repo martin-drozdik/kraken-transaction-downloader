@@ -3,6 +3,10 @@ const querystring = require('querystring');
 const fetch = require('node-fetch');
 
 
+let start_date = new Date(2018, 4, 1, 12);
+let end_date = new Date(2018, 4, 1, 13);
+
+
 let wait_time = 4000;
 
 
@@ -94,4 +98,4 @@ function download_prices(start_date, end_date)
 }
 
 
-download_prices(new Date(2018, 4, 1, 12), new Date(2018, 4, 1, 13));
+download_prices(start_date, end_date);
